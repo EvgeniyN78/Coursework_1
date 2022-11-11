@@ -84,5 +84,6 @@ public class Main {
         System.out.println();
         System.out.println("f. Получить Ф. И. О. всех сотрудников (вывести в консоль)");
         printFullNameEmployees();
+
     }
 }
