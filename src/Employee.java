@@ -2,18 +2,17 @@ import java.util.Objects;
 
 public class Employee {
 
-    public static int count = 0;
-    String fullName;
-    int department;
-    double salary;
-    public int idEmployee;
+    public static int counter = 0;
+    private String fullName;
+    private int department;
+    private int salary;
+    private int idEmployee;
 
-        public Employee(String fullName, int department, double salary) {
+        public Employee(String fullName, int department, int salary) {
         this.fullName = fullName;
         this.department = department;
         this.salary = salary;
-        count++;
-        idEmployee = count;
+        idEmployee = counter++;
     }
 
     public String getFullName() {
@@ -36,7 +35,7 @@ public class Employee {
         this.department = department;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
