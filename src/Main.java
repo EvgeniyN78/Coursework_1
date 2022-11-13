@@ -40,6 +40,10 @@ public class Main {
         return result;
     }
 
+    public static int calculateAverageSalaries() {
+        int calculateAverageSalaries = calculateTotalSalary() / employees.length;
+        return calculateAverageSalaries;
+    }
     public static void printFullNameEmployees() {
         for (int i = 0; i < employees.length; i++) {
             System.out.println(employees[i].getFullName());
@@ -79,7 +83,7 @@ public class Main {
 
         System.out.println();
         System.out.println("e. Подсчитать среднее значение зарплат (можно использовать для этого метод из пункта b). ");
-        System.out.println("Среднее занчение зарплат: " + calculateTotalSalary() / employees.length);
+        System.out.println("Среднее занчение зарплат: " + calculateAverageSalaries());
 
         System.out.println();
         System.out.println("f. Получить Ф. И. О. всех сотрудников (вывести в консоль)");
